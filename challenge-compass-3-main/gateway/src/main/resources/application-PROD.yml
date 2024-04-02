@@ -1,0 +1,35 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://admin:admin@${EUREKA_SERVER}:8761/eureka
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: 'health,metrics,info'
+
+info:
+  application:
+    name: ${spring.application.name}
+    description: Challenge III - IURY DE MATTOS [PROD]
+
+logging:
+  file:
+    name: ./logs/gateway.log
+
+server:
+  port: 8080

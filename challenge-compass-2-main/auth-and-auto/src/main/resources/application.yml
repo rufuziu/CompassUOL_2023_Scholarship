@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: ms-auth-and-auto
+  profiles:
+    active: DEV

@@ -1,0 +1,26 @@
+package br.com.ms.f.dtos;
+
+import br.com.ms.f.enums.ERole;
+
+public class UserWithRoleDTO {
+  public UserWithRoleDTO() {
+  }
+  private String name;
+  private ERole role;
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public ERole getRole() {
+    return role;
+  }
+
+  public void setRole(ERole role) {
+    this.role = role;
+  }
+}

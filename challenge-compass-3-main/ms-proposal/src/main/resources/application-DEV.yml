@@ -1,0 +1,62 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        trace: false
+
+  sql:
+    init:
+      mode: always
+
+  datasource:
+    url: jdbc:h2:mem:proposaldb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    defer-datasource-initialization: false
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+info:
+  application:
+    name: ${spring.application.name}
+    description: Challenge III - IURY DE MATTOS [DEV]
+
+logging:
+  file:
+    name: ./logs/ms-proposal.log
+
+mq:
+  queues:
+    voting-result: voting-result
+
+server:
+  port: 0

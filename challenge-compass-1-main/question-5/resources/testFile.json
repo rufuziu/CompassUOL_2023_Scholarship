@@ -1,0 +1,18 @@
+  {
+    "name": "Iury de Mattos",
+    "birthday": "1995-11-07",
+    "age": "",
+    "phone": "5542999254823",
+    "height": 1.83,
+    "email": "iury.mattos.pb@compass.com.br",
+    "cpf": "00000000000",
+    "address": {
+      "zip": "840000000",
+      "street": "RUA TESTE, 5",
+      "complement": "COMEÇO DA RUA",
+      "neighborhood": "CIDADE AZUL",
+      "city": "VILA VERDE",
+      "state": "PARANA",
+      "country": "BRAZIL"
+    }
+  }

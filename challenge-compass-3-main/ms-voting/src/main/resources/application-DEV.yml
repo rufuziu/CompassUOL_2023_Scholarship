@@ -1,0 +1,38 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+info:
+  application:
+    name: ${spring.application.name}
+    description: Challenge III - IURY DE MATTOS [DEV]
+
+logging:
+  file:
+    name: ./logs/ms-voting.log
+
+mq:
+  queue:
+    voting-result: voting-result
+
+server:
+  port: 0

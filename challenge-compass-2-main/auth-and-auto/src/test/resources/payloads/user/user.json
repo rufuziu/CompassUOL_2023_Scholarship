@@ -1,0 +1,24 @@
+{
+  "id": 1,
+  "email": "email1@compasso.com.br",
+  "name": "user 1",
+  "password": "123",
+  "relationships": [
+    {
+      "id": 1,
+      "user": {
+        "id": 1,
+        "email": "email1@compasso.com.br",
+        "name": "user 1",
+        "password": "123",
+        "relationships":  []
+      },
+      "microservice": {
+        "id": 1,
+        "name": "ms-a",
+        "relationships": []
+      },
+      "userRole": "ADMIN"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": 1,
+  "user": {
+    "id": 1,
+    "name": "Test",
+    "email": "test@email.com",
+    "password": "123456",
+    "microservices": [
+      {
+        "id": 1,
+        "user": {
+          "id": 1,
+          "name": "Test",
+          "email": "test@email.com",
+          "password": "123456",
+          "microservices": null
+        },
+        "microservice": {
+          "id": 1,
+          "name": "ms-test",
+          "users": null
+        },
+        "userRole": "ADMIN"
+      }
+    ]
+  },
+  "microservice": {
+    "id": 1,
+    "name": "ms-test",
+    "users": [
+      {
+        "id": 1,
+        "user": {
+          "id": 1,
+          "name": "Test",
+          "email": "test@email.com",
+          "password": "123456",
+          "microservices": null
+        },
+        "microservice": {
+          "id": 1,
+          "name": "ms-test",
+          "users": null
+        },
+        "userRole": "ADMIN"
+      }
+    ]
+  },
+  "userRole": "ADMIN"
+}

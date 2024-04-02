@@ -1,0 +1,31 @@
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: 'health,metrics,info'
+
+info:
+  application:
+    name: ${spring.application.name}
+    description: Challenge III - IURY DE MATTOS [PROD]
+
+logging:
+  file:
+    name: ./logs/eureka-server.log
+
+server:
+  port: 8761

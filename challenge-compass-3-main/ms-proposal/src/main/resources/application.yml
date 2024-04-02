@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: ms-proposal
+  profiles:
+    active: PROD
+proposalTime: 1
+intervalTime: 60000
